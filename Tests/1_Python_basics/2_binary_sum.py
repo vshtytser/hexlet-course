@@ -1,30 +1,15 @@
 def binary_sum(a, b):
-    
-    pointer = -1
-    i = 0
+    decimal_a = int(a, base=2)
+    decimal_b = int(b, base=2)
 
-    str_num = ''
+    decimal_sum = decimal_a + decimal_b
 
-    position_num_a = int(a[pointer:])
-    position_num_b = int(b[pointer:])
-
-    while i != len(a):
-        if position_num_a + position_num_b <= 1:
-            print(position_num_a + position_num_b)
-            str_num = str(position_num_a + position_num_b)
-            i += 1
-            print(str_num)
-        return str_num
-        
+    print(f'{decimal_sum:b}')
+    return f'{decimal_sum:b}'
 
 
 # 1 2 4 8 16 32
 
-#binary_sum('10', '1')      # 11
+binary_sum('10', '1')      # 11
 binary_sum('1101', '101')  # 10010
-
-
-# Реализуйте функцию binary_sum(),
-# которая принимает на вход два двоичных числа в виде строк
-# и возвращает их сумму. Вычисленная сумма также должен быть бинарным числом
-# в виде строки:
+binary_sum('1000', '10')
