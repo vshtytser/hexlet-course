@@ -6,7 +6,7 @@ def is_list(value):
         # print(False)
         return False
 
-list_of_nums = [1, 2, 3] # создаём список
+list_of_nums = [5, 6, 7] # создаём список
 
 is_list(list_of_nums)  # True
 
