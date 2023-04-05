@@ -1,17 +1,16 @@
 def is_list(value):
-    if type(value) == list:
-        # print(True)
-        return True
-    else:
-        # print(False)
-        return False
+    """
+    Determines whether a given value is a list or not.
 
-list_of_nums = [5, 6, 7] # создаём список
+    Args:
+        value: The value to check.
 
-is_list(list_of_nums)  # True
-
-is_list('string')  # False
-
-# optimize is_list function
-def is_list(value):
-    return type(value) == list  # return True or False
+    Returns:
+        True if the value is a list, False otherwise.
+        
+    Example:
+        list_of_nums = [5, 6, 7]
+        is_list([5, 6, 7]) # True
+        is_list('string') # False
+    """
+    return type(value) == list

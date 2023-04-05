@@ -9,7 +9,7 @@ def rotated_left(item):
         sequence: The input sequence with the first element moved to the end.
 
     Example:
-        # rotated_left("ABCD") # "BCDA"
+        rotated_left("ABCD") # "BCDA"
     """
     return item[1:] + item[0:1]
 

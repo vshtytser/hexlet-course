@@ -8,7 +8,7 @@ def duplicate(list):
     Returns:
         None. The input list is modified in place.
 
-    Examples:
+    Example:
         items = [1, 2]
         duplicate(items)  # nothing is returned
         print(items)  # => [1, 2, 1, 2]
