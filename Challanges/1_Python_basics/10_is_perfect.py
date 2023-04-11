@@ -24,13 +24,6 @@ def is_perfect(num):
 
     list_perf_divs = []
     for n in range(1, num):
-
-
-    if num <= 1 or num % 1 != 0:
-        return False
-
-    list_perf_divs = []
-    for n in range(1, num):
         if num % n == 0:
             list_perf_divs.append(n)
 
