@@ -2,7 +2,7 @@ from hexlet_pytest.example import reverse
 
 def test_reverse():
     assert reverse('Hexlet') == 'telxeH'
-    print('Excellent work!')
+    # print('Excellent work!')
 
 def test_reverse_for_empty_string():
     assert reverse('') == ''
